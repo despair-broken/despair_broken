@@ -16,8 +16,13 @@
     .header__nav{
         position: absolute;
         top: 0;
-        right: -100%;
-        transition: right 0.5s ease-out;
+        right: 0;
+        opacity: 0; /* Изначально меню полностью прозрачное */
+        transition: opacity 0.5s ease-out; /* Плавный переход для opacity */
+    }
+
+    .header__menu-container.active .header__nav {
+        opacity: 1;
     }
 
     .header__nav-list{
@@ -31,11 +36,6 @@
         font-size: 2vw;
         line-height: 2vw;
         text-align: right;
-    }
-
-    .header__menu-container.active .header__nav {
-        right: 0;
-    
     }
     
     .header__burger-menu {
@@ -106,8 +106,6 @@
         font-size: 5.2vw;
         line-height: 7.16vw;
     }
-
-
 
     .title-h2{
         font-size: 2.34vw;

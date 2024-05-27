@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>despair_broken</title>
+    <link rel="stylesheet" href="./css/header and footer.css">
+    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media-tablet.css">
+    <link rel="stylesheet" href="./css/media-mobile.css">
+
+    <audio id="buttonSoundJakiro">
+        <source src="./audio/jakiro.mpeg" type="audio/mpeg">
+    </audio>
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__top-container">
+                <a href="#" class="header__logo" title="Логотип">
+                    <img src="./images/svg/noemi-logo.svg" alt="Логотип сайта">
+                </a>
+                <div class="header__menu-container">
+                    <nav class="header__nav " aria-label="Главное меню">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item"><a href="#main" class="header__nav-link">главная</a></li>
+                            <li class="header__nav-item"><a href="#posts" class="header__nav-link">посты</a></li>
+                            <li class="header__nav-item"><a href="#articles" class="header__nav-link">статьи</a></li>
+                            <li class="header__nav-item"><a href="#tags" class="header__nav-link">теги</a></li>
+                            <li class="header__nav-item"><a href="#theme" class="header__nav-link">темы</a></li>
+                            <li class="header__nav-item"><a href="#contacts" class="header__nav-link">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__burger-menu">
+                        <button class="header__burger-button" aria-label="Меню" id="burgerButton">
+                            <span class="header__burger-icon"></span>
+                            <span class="header__burger-icon"></span>
+                            <span class="header__burger-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom-container">
+                <h1 class="header__title">Блог о творчестве, спорте, и образе жизни</h1>
+            </div>
+        </div>
+    </header>  
+    
+    <section class="section-cards" id="main">
+        <h2 class="section-cards__title title-h2">Сейчас в тренде</h2>
+        <div class="section-cards__container">
+            <div class="section-cards__card lifestyle__interior">
+                <div class="card__content">
+                    <div class="card__tags">
+                        <span class="card__tag">lifestyle</span>
+                        <span class="card__tag">interior</span>
+                    </div>
+                    <p class="card__text">
+                        <a href="https://journal.tinkoff.ru/guide/ogorodik-na-podokonnike/" class="card__link" target="_blank" rel="noopener noreferrer">
+                            Сейчас в тренде: сад на подоконнике
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="section-cards__card food">
+                <div class="card__content">
+                    <div class="card__tags">
+                        <span class="card__tag">food</span>
+                    </div>
+                    <p class="card__text">
+                        <a href="https://flowwow.com/blog/vidy-syrov-i-nazvaniya/" class="card__link" target="_blank" rel="noopener noreferrer">
+                            Сыры на красивых картинках из интернета: какие они на вкус?
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="section-cards__card lifestyle__travel">
+                <div class="card__content">
+                    <div class="card__tags">
+                        <span class="card__tag">lifestyle</span>
+                        <span class="card__tag">travel</span>
+                    </div>
+                    <p class="card__text">
+                        <a href="https://travel.yandex.ru/journal/pohod-v-gory-v-pervyy-raz-kak-podgotovitsya/" class="card__link" target="_blank" rel="noopener noreferrer">
+                            Собираемся в первый поход в горы
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="section-cards__card food__health">
+                <div class="card__content">
+                    <div class="card__tags">
+                        <span class="card__tag">food</span>
+                        <span class="card__tag">health</span>
+                    </div>
+                    <p class="card__text">
+                        <a href="https://torglip.ru/iblock/news/monitoring/analitika/e/razrushaem_mifi_produkti_v_kotorih_vitamina_s_bolshe_chem_v_limone04-04-2020/" class="card__link" target="_blank" rel="noopener noreferrer">
+                            Сейчас в тренде: сколько витамина с в лимонах
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <main class="main-content"> <!--  тут 2 секции находятся -->
+
+        <section class="main-content__primary"> <!--  левая из них -->
+            <div class="primary-card-container"> <!--  контейнер с картами -->
+                <div class="primary-card" id="articles"> <!--  карта -->
+                    <div class="primary-card__image-container">
+                        <img src="./images/last-post-pasha.jpg" alt="Изображение карты" class="primary-card__image">
+                    </div>
+                    <div class="primary-card__content">
+                        <div class="primary-card__tags">
+                            <span class="primary-card__tag">travel</span>
+                            <span class="primary-card__tag">health</span>
+                        </div>
+                        <h4 class="primary-card__description">
+                            <a href="#" class="primary-card__link">зачем мне октагон могу выйти на финдах))</a>
+                        </h4>
+                        <div class="primary-card__meta">
+                            <span class="primary-card__date">Дата</span>
+                            <a href="#" class="primary-card__author">Автор</a>
+                        </div>                    
+                        <p class="primary-card__text">Это опять полутильт ваще из-за диплома. Ну, я делаю его, но челы говорят, что не тянет почему-то на диплом. Хотя они просто не понимают, как и что делается. Мне говорят: "А сделай так, чтобы ты фотку с компа перетянул в игру, и у тебя там само наложилось все на декорации". 👍🏻 Я хз, я вчера препода чуть сыном шлюхи не назвал. Я открываю стим с блендером, а я уже долго с роминого акка существую. И там в блендере 750 часов. Он смотрит: "Огого…Хахах, сколько убитого времени". Вот такая фраза была. Я думал, я ща ему телефон в рот засуну. И будет хавать, сынок бляди анскильный 15 лет работает в проге, которая является стандартом 3д графики. И все, что он делает, это копирует кубики и квадратики для театральных эскизов. И даже не понимает, насколько он мог бы быть крутым. Меня ваще вчера подкосило с этих фразочек, как будто типнули ирл. АХАХАХАХАХАХАХАХ. Декан говорит: "Да вот, я готов поспорить, дай это задание ребятам с прогерского вуза, мне там сделают мега красиво и круто". Ну, я не стал ему отвечать, это бессмысленно. Бтв, я бы реально поспорил с ним.</p>
+                    </div>
+                </div>
+                <div class="primary-card"> <!--  карта -->
+                    <div class="primary-card__image-container">
+                        <img src="./images/last-post1.jpg" alt="Изображение карты" class="primary-card__image">
+                    </div>
+                    <div class="primary-card__content">
+                        <div class="primary-card__tags">
+                            <span class="primary-card__tag">travel</span>
+                            <span class="primary-card__tag">health</span>
+                        </div>
+                        <h4 class="primary-card__description">
+                            <a href="#" class="primary-card__link">10 мест, ради которых стоит проснуться на рассвете</a>
+                        </h4>
+                        <div class="primary-card__meta">
+                            <span class="primary-card__date">10 июня 2019 </span>
+                            <a href="#" class="primary-card__author">неизвестный автор</a>
+                        </div>                    
+                        <p class="primary-card__text">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
+                    </div>
+                </div>
+                <div class="primary-card"> <!--  карта -->
+                    <div class="primary-card__image-container">
+                        <img src="./images/last-post2.jpg" alt="Изображение карты" class="primary-card__image">
+                    </div>
+                    <div class="primary-card__content">
+                        <div class="primary-card__tags">
+                            <span class="primary-card__tag">travel</span>
+                            <span class="primary-card__tag">health</span>
+                        </div>
+                        <h4 class="primary-card__description">
+                            <a href="#" class="primary-card__link">зачем мне октагон могу выйти на финдах))</a>
+                        </h4>
+                        <div class="primary-card__meta">
+                            <span class="primary-card__date">Дата</span>
+                            <a href="#" class="primary-card__author">Автор</a>
+                        </div>                    
+                        <p class="primary-card__text">Это опять полутильт ваще из-за диплома.</p>
+                    </div>
+                </div>
+                <div class="primary-card"> <!--  карта -->
+                    <div class="primary-card__image-container">
+                        <img src="./images/last-post3.jpg" alt="Изображение карты" class="primary-card__image">
+                    </div>
+                    <div class="primary-card__content">
+                        <div class="primary-card__tags">
+                            <span class="primary-card__tag">travel</span>
+                            <span class="primary-card__tag">health</span>
+                        </div>
+                        <h4 class="primary-card__description">
+                            <a href="#" class="primary-card__link">зачем мне октагон могу выйти на финдах))</a>
+                        </h4>
+                        <div class="primary-card__meta">
+                            <span class="primary-card__date">Дата</span>
+                            <a href="#" class="primary-card__author">Автор</a>
+                        </div>                    
+                        <p class="primary-card__text">Это опять полутильт ваще из-за диплома.</p>
+                    </div>
+                </div>
+                <div class="primary-card"> <!--  карта -->
+                    <div class="primary-card__image-container">
+                        <img src="./images/last-post4.jpg" alt="Изображение карты" class="primary-card__image">
+                    </div>
+                    <div class="primary-card__content">
+                        <div class="primary-card__tags">
+                            <span class="primary-card__tag">travel</span>
+                            <span class="primary-card__tag">health</span>
+                        </div>
+                        <h4 class="primary-card__description">
+                            <a href="#" class="primary-card__link">зачем мне октагон могу выйти на финдах))</a>
+                        </h4>
+                        <div class="primary-card__meta">
+                            <span class="primary-card__date">Дата</span>
+                            <a href="#" class="primary-card__author">Автор</a>
+                        </div>                    
+                        <p class="primary-card__text">Это опять полутильт ваще из-за диплома.</p>
+                    </div>
+                </div>
+                <div class="primary-card"> <!--  карта -->
+                    <div class="primary-card__image-container">
+                        <img src="./images/last-post5.jpg" alt="Изображение карты" class="primary-card__image">
+                    </div>
+                    <div class="primary-card__content">
+                        <div class="primary-card__tags">
+                            <span class="primary-card__tag">travel</span>
+                            <span class="primary-card__tag">health</span>
+                        </div>
+                        <h4 class="primary-card__description">
+                            <a href="#" class="primary-card__link">зачем мне октагон могу выйти на финдах))</a>
+                        </h4>
+                        <div class="primary-card__meta">
+                            <span class="primary-card__date">Дата</span>
+                            <a href="#" class="primary-card__author">Автор</a>
+                        </div>                    
+                        <p class="primary-card__text">Это опять полутильт ваще из-за диплома.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="main-content__sidebar">  <!--  правая колонна -->
+
+            <div class="sidebar-posts" id="posts">
+
+                <h3 class="sidebar-posts__title title-h3">Новые посты</h3>
+
+                <div class="sidebar-posts__container">
+                    <div class="sidebar-post">
+                        <div class="sidebar-post__image-container">
+                            <img src="./images/1.jpg" alt="Изображение поста" class="sidebar-post__image">
+                        </div>
+                        <div class="sidebar-post__content">
+                            <span class="sidebar-post__date">10 июня 2019</span>
+                            <h6 class="sidebar-post__text"><a href="#" class="sidebar-post__link">10 мест, ради к wqe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qwe qоторых стоит проснуться</a></h6>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="sidebar-posts__container">
+                    <div class="sidebar-post">
+                        <div class="sidebar-post__image-container">
+                            <img src="./images/2.jpg" alt="Изображение поста" class="sidebar-post__image">
+                        </div>
+                        <div class="sidebar-post__content">
+                            <span class="sidebar-post__date">Дата</span>
+                            <h6 class="sidebar-post__text"><a href="#" class="sidebar-post__link">Текст поста</a></h6>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="sidebar-posts__container">
+                    <div class="sidebar-post">
+                        <div class="sidebar-post__image-container">
+                            <img src="./images/3.jpg" alt="Изображение поста" class="sidebar-post__image">
+                        </div>
+                        <div class="sidebar-post__content">
+                            <span class="sidebar-post__date">Дата</span>
+                            <h6 class="sidebar-post__text"><a href="#" class="sidebar-post__link">Текст поста</a></h6>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="sidebar-posts__container">
+                    <div class="sidebar-post">
+                        <div class="sidebar-post__image-container">
+                            <img src="./images/4.jpg" alt="Изображение поста" class="sidebar-post__image">
+                        </div>
+                        <div class="sidebar-post__content">
+                            <span class="sidebar-post__date">Дата</span>
+                            <h6 class="sidebar-post__text"><a href="#" class="sidebar-post__link">Текст поста</a></h6>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="sidebar-posts__container">
+                    <div class="sidebar-post">
+                        <div class="sidebar-post__image-container">
+                            <img src="./images/5.jpg" alt="Изображение поста" class="sidebar-post__image">
+                        </div>
+                        <div class="sidebar-post__content">
+                            <span class="sidebar-post__date">Дата</span>
+                            <h6 class="sidebar-post__text"><a href="#" class="sidebar-post__link">Текст поста</a></h6>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <form class="search-form" action="#" method="GET">
+                <input type="text" name="search" class="search-form__input" placeholder="Поиск...">
+                <button type="submit" class="search-form__button"></button>
+            </form>
+
+            <div class="subscription-form">
+                <h3 class="subscription-form__title  title-h3 ">Подпишитесь на рассылку</h3>
+                <form class="subscription-form__form" action="#" method="POST">
+                    <input type="email" name="email" class="subscription-form__input" placeholder="Введите ваш email">
+                    <button type="submit" class="subscription-form__button">подписаться</button>
+                </form>
+            </div> 
+
+            <div class="tags-container" id="tags">
+                <h3 class="tags-container__title title-h3">Теги</h3>
+                <div class="tags-container__tags">
+                    <a href="#" class="tag">fashion</a>
+                    <a href="#" class="tag">music</a>
+                    <a href="#" class="tag">fashion</a>
+                    <a href="#" class="tag">music</a>
+                    <a href="#" class="tag">fashion</a>
+                    <a href="#" class="tag">lifestyle</a>
+                    <a href="#" class="tag">music</a>
+                    <a href="#" class="tag">fashion</a>
+                    <a href="#" class="tag">music</a>
+                    <a href="#" class="tag">lifestyle</a>
+                    <a href="#" class="tag">music</a>
+                    <a href="#" class="tag">fashion</a>
+                </div>
+            </div>            
+            
+            <div class="themes-container" id="theme">
+                <h3 class="themes-container__title title-h3">Темы</h3>
+                <div class="themes-container__topics">
+                    <div class="topic-container">
+                        <a href="#" class="topic-container__word">Словоewqeqw</a>
+                        <span class="topic-container__number">1</span>
+                    </div>
+                    <div class="topic-container">
+                        <a href="#" class="topic-container__word">Словqas</a>
+                        <span class="topic-container__number">251</span>
+                    </div>
+                    <div class="topic-container">
+                        <a href="#" class="topic-container__word">Словqas</a>
+                        <span class="topic-container__number">12</span>
+                    </div>
+                    <div class="topic-container">
+                        <a href="#" class="topic-container__word">Словqas</a>
+                        <span class="topic-container__number">23232</span>
+                    </div>
+                    <div class="topic-container">
+                        <a href="#" class="topic-container__word">Словqas</a>
+                        <span class="topic-container__number">25</span>
+                    </div>
+                </div>
+            </div>            
+
+        </aside>
+
+    </main>
+
+    <section class="lower-section">
+        <h2 class="lower-section__title title-h2">Улсуги</h2>
+        <div class="lower-section__card-container">
+            <div class="lower-section__card">
+                <div class="lower-section__info-container">
+                    <div class="lower-section__image-container">
+                        <img src="./images/jakiro.jpg" alt="Dota 2 jakiro" class="lower-section__image">
+                    </div>
+                    <div class="lower-section__text-container">
+                        <h5 class="lower-section__description">ОБУЧЕНИЕ НА JAKIRO SUPPORT 7500 ИГРОК 500+ ИГР</h5>
+                        <div class="lower-section__main-text">Устали от постоянного нытья zxc гуленыша на керри??? Выход есть!!! Нужно просто: <a href="#eqwe qwe21 " id="fire-and-ice-link">🔥FIRE AND ICE❄️</a>
+                        </div>                        
+                        <div class="lower-section__additional-container">
+                            <div class="lower-section__prices">
+                                <div class="lower-section__old-price">1000₽</div>
+                                <div class="lower-section__new-price">800₽</div>
+                            </div>
+                            <a href="https://t.me/despair_broken" class="lower-section__buy-button" target="_blank" rel="noopener noreferrer">в магазин</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-section__empty-container"></div>
+            </div>
+            <div class="lower-section__card">
+                <div class="lower-section__info-container">
+                    <div class="lower-section__image-container">
+                        <img src="./images/качка.png" alt="Татвол и Мини пекка" class="lower-section__image">
+                    </div>
+                    <div class="lower-section__text-container">
+                        <h5 class="lower-section__description">fucking slaves</h5>
+                        <div class="lower-section__main-text">Даже mini pekka смог стать огромным мужчиной. Но в погоне за большими мышцами он не учел главного: каким бы огромным ты не стал, твой пенис всегда будет mini...</div>
+                        <div class="lower-section__additional-container">
+                            <div class="lower-section__prices">
+                                <div class="lower-section__new-price">300$</div>
+                            </div>
+                            <a href="https://t.me/despair_broken" class="lower-section__buy-button" target="_blank" rel="noopener noreferrer">в магазин</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-section__empty-container"></div>
+            </div>
+            <div class="lower-section__card">
+                <div class="lower-section__info-container">
+                    <div class="lower-section__image-container">
+                        <img src="./images/школа.jpg" alt="Школа" class="lower-section__image">
+                    </div>
+                    <div class="lower-section__text-container">
+                        <h5 class="lower-section__description">Как не стать обоссаным в первый учебный день?</h5>
+                        <div class="lower-section__main-text">Расскажу про паттерны поведения в школе! Как съебаться с уроков и избежать наказания? Как заткнуть ебло ненавистной математичке? Все это ты узнаешь здесь...</div>
+                        <div class="lower-section__additional-container">
+                            <div class="lower-section__prices">
+                                <div class="lower-section__new-price">1000₽</div>
+                            </div>
+                            <a href="https://t.me/despair_broken" class="lower-section__buy-button" target="_blank" rel="noopener noreferrer">в магазин</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="lower-section__empty-container"></div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer" id="contacts">
+        <div class="footer__svg-container">
+            <div class="footer__icon footer__icon--1">
+                <a href="https://music.yandex.ru/album/30689029/track/124728125" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/svg/яндекс-музыка.svg" alt="Yandex Music Icon" class="footer__icon-img">
+                </a>
+            </div>
+            <div class="footer__icon footer__icon--2">
+                <a href="https://vk.com/bites___the___dust" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/svg/vk.svg" alt="VK Icon" class="footer__icon-img">
+                </a>
+            </div>
+            <div class="footer__icon footer__icon--3">
+                <a href="https://vkusnotochkamenu.ru/kombo-vkusno-i-tochka/dvojnoj-big-speshial-kombo-48415" target="_blank" rel="noopener noreferrer">
+                    <img src="./images/svg/vkusno-i-tochka.svg" alt="Vkusno i Tochka Icon" class="footer__icon-img">
+                </a>
+            </div>
+        </div>
+        <p class="footer__text">Говорят, у Невермора душа поэта, но на самом деле я ебал твою мать...</p>
+    </footer>   
+
+    <script src="./js/main.js"></script>
+</body>

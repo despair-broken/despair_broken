@@ -1,0 +1,289 @@
+.title-h3{
+    position: relative;
+    text-align: center;
+    padding-bottom: 0.78vw;
+    font-size: 0.84vw;
+    text-transform: uppercase;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0; /* 28 / 23 / 22 / 7 */
+}
+
+.sidebar-posts__title{
+    margin-bottom: 1.69vw;
+}
+
+.subscription-form__title{
+    margin-bottom: 1.38vw;
+}
+
+.tags-container__title{
+    margin-bottom: 1.325vw;
+}
+
+.themes-container__title{
+    margin-bottom: 0.42vw;
+}
+
+.title-h3::after{
+    content: ''; /* Добавляем содержимое псевдоэлемента */
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    bottom: 0; /* Размещаем псевдоэлемент внизу */
+    left: 50%; /* Размещаем псевдоэлемент в середине горизонтально */
+    transform: translateX(-50%); /* Сдвигаем псевдоэлемент на половину его ширины влево */
+    width: 3.9vw; /* Устанавливаем ширину подчеркивания */
+    height: 0.18vw; /* Устанавливаем толщину подчеркивания */
+    background-color: #e1d9bd; /* Устанавливаем цвет подчеркивания */
+}
+
+.main-content{
+    display: flex;
+    justify-content: space-between;
+    margin:0 14.75vw 3.6vw;
+}
+
+.main-content__primary{
+    width: 47vw;
+}
+
+.primary-card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6vw;
+}
+
+.primary-card{
+    display: flex;
+}
+
+.primary-card__image{
+    width: 23vw;
+    aspect-ratio: 75 / 58; /* Соотношение сторон (высота / ширина) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.primary-card__content{
+    margin-left: 2vw;
+    width: 22vw;
+}
+
+.primary-card__tag{
+    font-size: 0.84vw;
+    line-height: 0.84vw;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin-right: 0.9vw;
+}
+
+.primary-card__description{
+    font-size: 1.2vw;
+    line-height: 1.445vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;    
+    margin-top: 0.48vw;
+}
+
+.primary-card__meta{
+    margin-top: 1.5vw;
+    margin-bottom: 2.4vw;
+    display: flex;
+}
+
+.primary-card__date{
+    font-size: 0.72vw;
+    line-height: 0.72vw;
+    color: #888888;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin-right: 0.66vw;
+}
+
+.primary-card__author{
+    font-size: 0.72vw;
+    line-height: 0.72vw;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.primary-card__text{
+    font-size: 0.9vw;
+    line-height: 1.325vw;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+}
+
+.main-content__sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 3.6vw;
+    padding-left: 7.5vw;
+    width: 16vw;
+}
+
+.sidebar-post{
+    display: flex;
+    margin-bottom: 1.2vw;
+}
+
+.sidebar-post__image-container{
+    width: 4.22vw;
+    height: 4.22vw;
+}
+
+.sidebar-post__image{
+    width: 4.22vw;
+    height: 4.22vw;
+}
+
+.sidebar-post__content{
+    margin-left: 1.08vw;
+    width: 10.7vw;
+}
+
+.sidebar-post__date{
+    opacity: 0.5;
+    font-size: 0.72vw;
+    line-height: 0.72vw;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.sidebar-post__text{
+    font-size: 0.84vw;
+    line-height: 1.08vw;
+    text-transform: uppercase;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    margin-top: 0.12vw;
+}
+
+.search-form{
+    display: flex;
+    height: 2.9vw;
+
+}
+
+.search-form__input{
+    all: unset; /* Сбрасывает все стили */
+    box-sizing: border-box; /* Устанавливает box-sizing для правильного расчета ширины и высоты */
+    background-color: #f4f7f6;
+    flex-grow: 1;
+    padding-left: 1.02vw;
+    font-family: "Open Sans", Arial, sans-serif;
+    opacity: 0.5;
+    font-size: 0.78vw;
+}
+
+.search-form__button{
+    all: unset; /* Сбрасывает все стили */
+    box-sizing: border-box; /* Устанавливает box-sizing для правильного расчета ширины и высоты */
+    width: 2.9vw;
+    background-color: #b59f5b;
+    background-image: url('../images/svg/search.svg');
+    background-size: 1.08vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search-form__input:hover,
+.search-form__input:focus,
+.search-form__input:active{
+    border: 0.06vw #b59f5b solid;
+}
+
+.search-form__button:hover,
+.search-form__button:focus,
+.search-form__button:active{
+    background-size: 1.2vw;
+    border: 0.06vw black solid;
+    cursor: pointer;
+}
+
+.subscription-form__form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.02vw;
+}
+
+.subscription-form__input{
+    all: unset; /* Сбрасывает все стили */
+    box-sizing: border-box; /* Устанавливает box-sizing для правильного расчета ширины и высоты */
+    background-color: #f4f7f6;
+    flex-grow: 1;
+    padding-left: 1.02vw;
+    font-family: "Open Sans", Arial, sans-serif;
+    opacity: 0.5;
+    font-size: 0.78vw;
+    height: 2.9vw;
+}
+
+.subscription-form__button{
+    all: unset; /* Сбрасывает все стили */
+    box-sizing: border-box; /* Устанавливает box-sizing для правильного расчета ширины и высоты */
+    height: 2.9vw;
+    flex-grow: 1;
+    background-color: #b59f5b;
+    text-align: center;
+    font-size: 0.84vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.subscription-form__input:hover,
+.subscription-form__input:focus,
+.subscription-form__input:active{
+    border: 0.06vw #b59f5b solid;
+}
+
+.subscription-form__button:hover,
+.subscription-form__button:focus,
+.subscription-form__button:active{
+    font-size: 0.9vw;
+    border: 0.06vw black solid;
+    cursor: pointer;
+}
+
+.tags-container__tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag{
+    font-size: 0.72vw;    
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    border: 0.18vw #ededed solid;
+    padding: 0.18vw 0.66vw;
+    margin-right: 0.6vw;
+    margin-bottom: 0.3vw;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.topic-container{
+    height: 2.9vw;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1vw solid #ededed;
+}
+
+.topic-container__word{
+    font-size: 0.84vw;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.topic-container__number{
+    font-size: 0.72vw;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding-left: 0.18vw;
+    padding-bottom: 0.6vw;
+}

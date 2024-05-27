@@ -1,0 +1,233 @@
+.title-h2{
+    position: relative;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    text-transform: uppercase;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+    padding-bottom: 0.72vw;
+    margin: 0;
+}
+
+.title-h2::after{
+    content: ''; /* Добавляем содержимое псевдоэлемента */
+    position: absolute; /* Устанавливаем абсолютное позиционирование */
+    bottom: 0; /* Размещаем псевдоэлемент внизу */
+    left: 50%; /* Размещаем псевдоэлемент в середине горизонтально */
+    transform: translateX(-50%); /* Сдвигаем псевдоэлемент на половину его ширины влево */
+    width: 3.6vw; /* Устанавливаем ширину подчеркивания */
+    height: 0.18vw; /* Устанавливаем толщину подчеркивания */
+    background-color: #e1d9bd; /* Устанавливаем цвет подчеркивания */
+}
+
+.section-cards{
+    margin-bottom: 3.9vw;
+    margin-top: 3.6vw;
+}
+
+.section-cards__container{
+    display: flex;
+    gap: 0.24vw;
+    margin-top: 1.69vw;
+}
+
+.section-cards__card{
+    width: 24.82vw;
+    aspect-ratio: 75 / 58; /* Соотношение сторон (высота / ширина) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0.96vw 1.2vw;
+    background-color: black;
+    position: relative;
+}
+
+.section-cards__card::after{
+    content: ''; /* Обязательно для отображения псевдоэлемента */
+    position: absolute; /* Позиционируем псевдоэлемент относительно родительского элемента */
+    top: 0; /* Выравнивание псевдоэлемента относительно верхнего края родительского элемента */
+    left: 0; /* Выравнивание псевдоэлемента относительно левого края родительского элемента */
+    width: 100%; /* Ширина псевдоэлемента равна ширине родительского элемента */
+    height: 100%; /* Высота псевдоэлемента равна высоте родительского элемента */
+    background:rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.card__content{
+    position:relative;
+    z-index: 2;
+    border: 0.18vw solid #7d683b;
+}
+
+.card__tags{
+    margin-top: 2.1vw;
+}
+
+.card__tag{
+    font-size: 0.84vw;
+    line-height: 0.84vw;
+    text-transform: uppercase;
+    color: #b59f5b;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    padding-left: 1.8vw;
+}
+
+.card__text{
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-family: "Open Sans", Arial, sans-serif;
+    margin: 0;
+    padding: 1.8vw;
+    padding-top: 0.24vw;
+}
+
+.lifestyle__interior{
+    background-image: url(../images/trend1.jpg);
+}
+
+.food{
+    background-image: url(../images/trend2.jpg);
+}
+
+.lifestyle__travel{
+    background-image: url(../images/trend3.jpg);
+}
+
+.food__health{
+    background-image: url(../images/trend4.jpg);
+}
+
+.lower-section{
+    margin: 0 14.75vw;
+}
+
+.lower-section__card-container{
+    width: 21vw;
+    margin-top: 1.69vw;
+    display: flex;
+    gap: 3.75vw;
+}
+
+.lower-section__card{
+    width: 21vw;
+    position: relative;
+}
+
+.lower-section__info-container{
+    padding: 1.265vw;
+    padding-bottom: 4vw;
+}
+
+.lower-section__image-container{
+    width: 18.47vw;
+}
+
+.lower-section__image{
+    width: 18.47vw;
+    aspect-ratio: 75 / 58; /* Соотношение сторон (высота / ширина) */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+
+.lower-section__text-container{
+    margin-top: 1.2vw;
+}
+
+.lower-section__description{
+    margin: 0;
+    font-size: 1.2vw;
+    line-height: 1.2vw;
+    text-transform: uppercase;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+.lower-section__main-text{
+    font-size: 0.9vw;
+    line-height: 1.08vw;
+    font-weight: 400;
+    font-family: "Open Sans";
+    margin-top: 1vw;
+    margin-bottom: 1.5vw;
+}
+
+.lower-section__additional-container{
+    position: absolute;
+    top: 0; /* Выравнивание псевдоэлемента относительно верхнего края родительского элемента */
+    left: 0; /* Выравнивание псевдоэлемента относительно левого края родительского элемента */
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.265vw;
+}
+
+.lower-section__old-price{
+    font-size: 0.84vw;
+    line-height: 0.72vw;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.lower-section__new-price{
+    font-size: 1.2vw;
+    line-height: 1.08vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Open Sans";
+}
+
+.lower-section__buy-button{
+    width: 8.5vw;
+    height: 2.9vw;
+    background-color:#b59f5b;
+
+    font-size: 0.84vw;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+}
+
+.lower-section__buy-button:hover,
+.lower-section__buy-button:focus,
+.lower-section__buy-button:active{
+    font-size: 0.9vw;
+    border: 0.06vw black solid;
+    cursor: pointer;
+}
+
+.lower-section__empty-container{
+    position: absolute;
+    top: 13.61vw; /* Выравнивание псевдоэлемента относительно верхнего края родительского элемента */
+    left: 0; /* Выравнивание псевдоэлемента относительно левого края родительского элемента */
+    right: 0;
+    bottom: 0;
+    border: #7d683b 0.18vw solid;
+}
+
+#fire-and-ice-link{
+    z-index: 1;
+    position: relative;
+}
+
+#fire-and-ice-link:hover,
+#fire-and-ice-link:focus,
+#fire-and-ice-link:active{
+    color:#b59f5b;
+}

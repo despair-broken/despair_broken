@@ -1,0 +1,409 @@
+@media (max-width: 768px) {
+
+    .header{
+        background-image: url('../images/banner-mobile.jpg');
+    }
+
+    .header__wrapper{
+        margin:0 5vw;
+        padding-top: 7.5vw;
+    }
+    
+    .header__logo{
+        width: 75vw;
+        margin: 0 auto;
+        margin-top: 30vw;
+    }
+
+    .header__nav-list{
+        padding: 6vw 12vw;
+    }
+
+    .header__nav-item{
+        font-size: 3vw;
+    }
+
+    .header__bottom-container{
+        margin: 10vw 5vw 0;
+        padding-bottom: 60vw;
+    }
+
+    .header__burger-button {
+        margin-left: -7vw;
+    }
+
+    .header__burger-icon {
+        position: absolute;
+        width: 8vw;
+        height: 1vw;
+    }
+    
+    .header__burger-icon:nth-child(1) {
+        transform: translate(-50%, -50%) translateY(-2.4vw); /* Смещаем вверх */
+    }
+    
+    .header__burger-icon:nth-child(2) {
+        transform: translate(-50%, -50%); /* Центрируем элемент */  
+        opacity: 1; /* Начальное состояние видимая */
+    }
+    
+    .header__burger-icon:nth-child(3) {
+        transform: translate(-50%, -50%) translateY(2.4vw); /* Смещаем вниз */
+    }
+    
+    .header__title{
+        font-size: 7.2vw;
+        line-height: 10vw;
+    }
+
+    .title-h2{
+        font-size: 4.4vw;
+        line-height: 4.4vw;
+        padding-bottom: 2.8vw;
+    }
+    
+    .title-h2::after{
+        width: 18.6vw; /* Устанавливаем ширину подчеркивания */
+        height: 0.8vw; /* Устанавливаем толщину подчеркивания */
+    }
+
+    .section-cards{
+        margin-bottom: 12.2vw;
+        margin-top: 11vw;
+    }
+
+    .section-cards__container{
+        gap: 2vw;
+        margin-top: 6.6vw;
+    }
+
+    .section-cards__card{
+        width: 100%;
+        padding: 4.2vw;
+    }
+    
+    .card__content{
+        border: 0.8vw solid #7d683b;
+    }
+
+    .card__tags{
+        margin-top: 9vw;
+    }
+    
+    .card__tag{
+        font-size: 3.8vw;
+        line-height: 3.8vw;
+        padding-left: 5vw;
+    }
+
+    .card__text{
+        font-size: 4.4vw;
+        line-height: 5.5vw;
+        padding:5vw;
+        padding-top: 3vw;
+    }
+
+    .title-h3{
+        padding-bottom: 3.3vw;
+        font-size: 4.4vw;
+    }
+
+    .sidebar-posts__title{
+        margin-bottom: 8.8vw;
+        margin-top: 12.5vw;
+    }
+    
+    .subscription-form__title{
+        margin-bottom: 6vw;
+    }
+
+    .tags-container__title{
+        margin-bottom:6.3vw;
+    }
+
+    .themes-container__title{
+        margin-bottom: 1.2vw;
+    }
+
+    .title-h3::after{
+        width: 18vw; /* Устанавливаем ширину подчеркивания */
+        height: 0.7vw; /* Устанавливаем толщину подчеркивания */
+    }
+    .main-content{
+        margin: 0 3.8vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .main-content__primary{
+        width: 100%;
+    }
+    
+    .primary-card-container{
+        gap: 9.8vw;
+    }
+    
+    .primary-card__image-container{
+        margin-bottom: 5vw;
+    }
+
+    .primary-card__image{
+        width: 100%;
+    }
+    
+    .primary-card__content{
+        width: 100%;
+    }
+    
+    .primary-card__tag{
+        font-size: 3.8vw;
+        line-height: 3.8vw;
+        margin-right: 5vw;
+    }
+    
+    .primary-card__description{
+        font-size: 4.4vw;
+        line-height: 5vw;  
+        margin-top: 3vw;
+    }
+    
+    .primary-card__meta{
+        margin: 3vw 0;
+    }
+    
+    .primary-card__date{
+        font-size: 3.3vw;
+        line-height: 3.3vw;
+        margin-right: 5vw;
+    }
+    
+    .primary-card__author{
+        font-size: 3.3vw;
+        line-height: 3.3vw;
+    }
+    
+    .primary-card__text{
+        font-size: 3.8vw;
+        line-height: 5.5vw;
+        padding-bottom: 6vw;
+        border-bottom: 0.4vw solid #ededed;
+    }
+
+    .main-content__sidebar{
+        gap: 12.5vw;
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .sidebar-post{
+        margin-bottom: 6vw;
+    }
+    
+    .sidebar-post__image-container{
+        width: 19.4vw;
+        height: 19.4vw;
+    }
+    
+    .sidebar-post__image{
+        width: 19.4vw;
+        height: 19.4vw;
+    }
+    
+    .sidebar-post__content{
+        margin-left: 5vw;
+        width: 100%;
+    }
+    
+    .sidebar-post__date{
+        font-size: 3.3vw;
+        line-height: 3.3vw;
+    }
+    
+    .sidebar-post__text{
+        font-size: 3.8vw;
+        line-height: 5vw;
+        margin-top: 1.5vw;
+    }
+    
+    .search-form{
+        height: 13.6vw;    
+    }
+    
+    .search-form__input{
+        padding-left: 5vw;
+        font-size: 3.5vw;
+    }
+    
+    .search-form__button{
+        width:13.6vw;
+        background-size: 5.1vw;
+    }
+    
+    .search-form__input:hover,
+    .search-form__input:focus,
+    .search-form__input:active{
+        border: 0.06vw #b59f5b solid;
+    }
+    
+    .search-form__button:hover,
+    .search-form__button:focus,
+    .search-form__button:active{
+        background-size: 5.3vw;
+        border: 0.06vw black solid;
+    }
+    
+    .subscription-form__form{
+        gap: 4.8vw;
+    }
+    
+    .subscription-form__input{
+        padding-left: 5vw;
+        font-size: 3.5vw;
+        height: 13.6vw;
+    }
+    
+    .subscription-form__button{
+        height: 13.6vw;
+        font-size: 3.9vw;
+    }
+    
+    .subscription-form__input:hover,
+    .subscription-form__input:focus,
+    .subscription-form__input:active{
+        border: 0.06vw #b59f5b solid;
+    }
+    
+    .subscription-form__button:hover,
+    .subscription-form__button:focus,
+    .subscription-form__button:active{
+        font-size: 4vw;
+        border: 0.06vw black solid;
+    }
+
+    .tag{
+        font-size: 3.3vw;    
+        padding: 1.6vw 3vw;
+        margin-right: 1.8vw;
+        margin-bottom: 2vw;
+        border: 0.5vw #ededed solid;
+    }
+
+    .topic-container{
+        height: 13.6vw;
+        border-bottom: 0.2vw solid #ededed;
+    }
+    
+    .topic-container__word{
+        font-size: 3.8vw;
+    }
+    
+    .topic-container__number{
+        font-size: 3vw;
+        padding-left: 0;
+        padding-bottom: 4vw;
+    }
+
+    .lower-section{
+        margin: 12vw 3.8vw 0vw;
+    }
+    
+    .lower-section__card-container{
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 7.7vw;
+        gap: 7vw;
+    }
+    
+    .lower-section__card{
+        width: 100%;
+    }
+    
+    .lower-section__info-container{
+        padding: 5vw;
+        padding-bottom: 25vw;
+    }
+    
+    .lower-section__image-container{
+        width: 100%;
+    }
+    
+    .lower-section__image{
+        width: 100%;
+    }
+    
+    .lower-section__text-container{
+        margin-top: 4vw;
+    }
+    
+    .lower-section__description{
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+    
+    .lower-section__main-text{
+        font-size: 4.1vw;
+        line-height: 6vw;
+        margin: 1vw 0 0;
+    }
+    
+    .lower-section__additional-container{
+        padding: 5vw;
+    }
+    
+    .lower-section__old-price{
+        font-size:3.8vw;
+        line-height: 3.3vw;
+    }
+    
+    .lower-section__new-price{
+        font-size: 6vw;
+        line-height: 5.5vw;
+    }
+
+    .lower-section__buy-button{
+        width: 39vw;
+        height: 13.6vw;
+        font-size: 4vw;
+    }
+    
+    .lower-section__buy-button:hover,
+    .lower-section__buy-button:focus,
+    .lower-section__buy-button:active{
+        font-size: 4.2vw;
+        border: 0.13vw solid black;
+    }
+    
+    .lower-section__empty-container{
+        position: absolute;
+        top: 60vw; /* Выравнивание псевдоэлемента относительно верхнего края родительского элемента */
+        left: 0; /* Выравнивание псевдоэлемента относительно левого края родительского элемента */
+        right: 0;
+        bottom: 0;
+        border: #7d683b 1vw solid;
+    }
+
+    .footer{
+        margin: 12.5vw 3.8vw;
+    }
+    
+    .footer__svg-container{
+        height: 23.6vw;
+        gap: 5vw;
+    }
+    
+    .footer__icon{
+        width: 5.2vw;
+        height: 5.2vw;
+    }
+    
+    .footer__icon-img{
+        width: 5.2vw;
+        height: 5.2vw;
+    }
+    
+    .footer__text{
+        margin: 12.5vw 0 0;
+        font-size: 2.3vw;
+        line-height: 2.3vw;
+    }
+}

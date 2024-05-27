@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none; /* Убирает подчеркивание ссылок */
+    color: inherit; /* Наследует цвет текста */
+    cursor: pointer; /* Изменяет курсор при наведении на ссылку */
+}
+
+.header{
+    background-image: url('../images/banner-bg.jpg');
+    background-size: cover; /* Масштабирование изображения, чтобы оно занимало всю доступную область */
+    background-repeat: no-repeat; /* Запрет повтора изображения */
+    background-color: black;
+    position: relative;
+}
+
+.header::after{
+    content: ''; /* Обязательно для отображения псевдоэлемента */
+    position: absolute; /* Позиционируем псевдоэлемент относительно родительского элемента */
+    top: 0; /* Выравнивание псевдоэлемента относительно верхнего края родительского элемента */
+    left: 0; /* Выравнивание псевдоэлемента относительно левого края родительского элемента */
+    width: 100%; /* Ширина псевдоэлемента равна ширине родительского элемента */
+    height: 100%; /* Высота псевдоэлемента равна высоте родительского элемента */
+    background:rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.header__wrapper{
+    margin:0 14.75vw;
+    padding-top: 1.5vw;
+}
+
+.header__top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.header__logo{
+    width: 10.8vw;
+    z-index: 2;
+}
+
+.header__nav-list{
+    display: flex;
+    gap: 2.1vw;
+}
+
+.header__nav-item{
+    font-size: 0.78vw;
+    line-height: 0.78vw;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+    z-index: 2;
+    list-style-type: none;
+}
+
+.header__burger-menu{
+    display: none;
+}
+
+.header__bottom-container{
+    margin: 6.9vw 13.85vw 0;
+    padding-bottom: 6.9vw;
+}
+
+.header__title{
+    position: relative;
+    z-index: 2;
+    font-size: 2.71vw;
+    line-height: 4.52vw;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Open Sans", Arial, sans-serif;
+    text-align: center;
+}
+
+.footer{
+    margin: 3.9vw 14.75vw 2.5vw;
+}
+
+.footer__svg-container{
+    height: 4.9vw;
+    background-color: #f3f7f5;
+    display: flex;
+    gap: 1.08vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__icon{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+.footer__icon-img{
+    width: 1.2vw;
+    height: 1.2vw;
+}
+
+.footer__text{
+    margin: 4.5vw 0 0;
+    text-align: center;
+    font-size: 0.72vw;
+    line-height: 0.72vw;
+    color: #999999;
+    font-weight: 700;
+    font-family: "Open Sans";
+}

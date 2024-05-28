@@ -400,6 +400,13 @@
         width: 5.2vw;
         height: 5.2vw;
     }
+
+    .footer__icon-img:hover,
+    .footer__icon-img:focus,
+    .footer__icon-img:active{
+        width: 5.8vw;
+        height: 5.8vw;
+    }
     
     .footer__text{
         margin: 12.5vw 0 0;

@@ -456,6 +456,13 @@
         width: 2.6vw;
         height: 2.6vw;
     }
+
+    .footer__icon-img:hover,
+    .footer__icon-img:focus,
+    .footer__icon-img:active{
+        width: 2.8vw;
+        height: 2.8vw;
+    }
     
     .footer__text{
         margin: 6.51vw 0 0;
